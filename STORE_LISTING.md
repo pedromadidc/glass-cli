@@ -97,12 +97,6 @@ Host the PRIVACY_POLICY.md content at a public URL, for example:
 - GitHub Pages: https://yourusername.github.io/glass/privacy-policy
 - Or raw GitHub: https://github.com/yourusername/glass/blob/main/PRIVACY_POLICY.md
 
-### Homepage URL (optional)
-https://github.com/AshBlueSky/glass
-
-### Support URL (optional)
-https://github.com/AshBlueSky/glass/issues
-
 ---
 
 ## Single Purpose Description

@@ -4,7 +4,7 @@
   "version": "3.0.0",
   "description": "A command-line interface for platform development. Navigate tables, impersonate users, check ACLs, and more.",
   "author": "Pedro Madi",
-  "homepage_url": "https://github.com/AshBlueSky/glass",
+  "homepage_url": "https://github.com/pedromadidc/glass-cli",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
