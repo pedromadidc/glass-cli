@@ -1,0 +1,88 @@
+{
+  "manifest_version": 3,
+  "name": "Glass CLI",
+  "version": "3.0.0",
+  "description": "A command-line interface for platform development. Navigate tables, impersonate users, check ACLs, and more.",
+  "author": "Pedro Madi",
+  "homepage_url": "https://github.com/AshBlueSky/glass",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Glass CLI Settings",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.servicenow.com/*",
+    "https://*.service-now.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.servicenow.com/*",
+        "https://*.service-now.com/*"
+      ],
+      "js": [
+        "src/lib/command-registry.js",
+        "src/lib/context.js",
+        "src/lib/api.js",
+        "src/lib/ui.js",
+        "src/lib/background-script.js",
+        "src/lib/results-page.js",
+        "src/commands/help.js",
+        "src/commands/list.js",
+        "src/commands/mirror.js",
+        "src/commands/do.js",
+        "src/commands/filter.js",
+        "src/commands/cmt.js",
+        "src/commands/impersonate.js",
+        "src/commands/home.js",
+        "src/commands/me.js",
+        "src/commands/background.js",
+        "src/commands/cache.js",
+        "src/commands/separate.js",
+        "src/commands/login.js",
+        "src/commands/logout.js",
+        "src/commands/stats.js",
+        "src/commands/config.js",
+        "src/commands/xml.js",
+        "src/commands/upload.js",
+        "src/commands/pop.js",
+        "src/commands/record.js",
+        "src/commands/online.js",
+        "src/commands/postman.js",
+        "src/commands/play.js",
+        "src/commands/explode.js",
+        "src/commands/acl.js",
+        "src/commands/retrievesets.js",
+        "src/commands/keyword.js",
+        "src/commands/code.js",
+        "src/commands/random.js",
+        "src/commands/clear.js",
+        "src/floating-icon.js",
+        "src/main.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["api-bridge.js"],
+      "matches": [
+        "https://*.servicenow.com/*",
+        "https://*.service-now.com/*"
+      ]
+    }
+  ]
+}
