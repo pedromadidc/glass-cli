@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Glass CLI",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A command-line interface for platform development. Navigate tables, impersonate users, check ACLs, and more.",
   "author": "Pedro Madi",
   "homepage_url": "https://github.com/pedromadidc/glass-cli",
